@@ -20,11 +20,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-    <meta name="description" content="Collaborate in one Visual Workspace" />
+    <head>
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="CollabOnline" />
-    <meta property="og:description" content="Collaborate in one Visual Workspace" />
+    <meta property="og:url" content="collab-online.vercel.app" />
+    <meta property="og:title" content="CollabOnline - Collaborate in one Visual Workspace" />
+    <meta property="og:description" content="real-time collaboration tool with features for drawing, writing, and placing various 
+    objects such as sticky notes, images, and shapes." />
     <meta property="og:image" content="https://i.postimg.cc/653yw6FF/Screenshot-2024-07-24-232003.png" />
+    </head>
       <body className={inter.className}>
         <Suspense fallback={<Loading />}>
         <ConvexClientProvider>
